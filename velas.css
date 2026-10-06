@@ -1,0 +1,43 @@
+/*fonte do titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(228, 213, 171);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    background-image: rgb(228, 213, 171);
+}
+
+/*tamanho da logo*/
+#logo{
+    width: 100px;
+    height: 75px;
+}
+
+header{
+    background-color:  rgb(168, 101, 132);
+    display: flex;
+
+}
+
+h1{
+    font-family: "Ephesis", cursive;
+  font-weight: 600;
+  font-style: normal; /*fonte do titulo*/
+  font-size: 60px;
+
+  align-self: flex-end;
+  color:  rgb(110,42,75);
+}
