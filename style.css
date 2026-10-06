@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 *{
 
     margin: 0%;
@@ -8,19 +9,49 @@
 
 }
 
-body{
-
-    background-color: #fff5f8;
-
-    font-family: Arial, sans-serif;
-
+header{
+    display: flex;
+    background-color:  rgb(168, 101, 132);
 }
 
+.banner{
+
+    background-image: url(./imagens/banner_flores.jpg);
+    height: 300px;
+
+    background-size: cover;
+}
+
+
+body{
+    background-color: rgb(228, 213, 171);
+}
+
+
 a{
-    color: #f5dce5;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#logo{
+    width: 100px;
+    height: 75px;
+}
+
+h1{
+
+  font-family: "Ephesis", cursive;
+  font-weight: 600;
+  font-style: normal; /*fonte do titulo*/
+  font-size: 60px;
+
+  align-self: flex-end;
+  color:  rgb(110,42,75);
 }
 
 h2{
+
+    font-size: xx-large;
 
     height: 80px;
 
@@ -82,7 +113,7 @@ img{
 
     align-items: center;
 
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px rgba(82, 2, 62, 0.622);
 
     transform: scale(1.0);
 
