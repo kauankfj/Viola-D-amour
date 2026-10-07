@@ -41,3 +41,20 @@ h1{
   align-self: flex-end;
   color:  rgb(110,42,75);
 }
+
+main{
+    display: flex;
+}
+
+
+
+
+#baixo{
+    background-color: rgb(97, 124, 65);
+    width: 1000px;
+}
+
+#lado{
+    background-color: rgb(87, 65, 107);
+    width: 400px;
+}
