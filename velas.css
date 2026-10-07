@@ -44,17 +44,62 @@ h1{
 
 main{
     display: flex;
+    width:100%;
+    height: 720px; 
 }
 
+#banner{
+    height: 300px;
+    width: 1200px;
+    align-self: flex-start;
+    object-fit: cover;
+}
 
+.lado-esquedo {
+    display: flex;
+    flex-direction: column;
+    height: 720px;
 
+}
+ /*caixa das opções*/
+.caixa-meio{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 
-#baixo{
+    height: 50px;
+    padding-left:30px ;
+    
+    color:rgb(124, 84, 121) ;
+    font-size: 20px;
+}
+
+/*caixa onde vai ficar os produtos*/
+.caixa-baixo{
+    display: flex;
     background-color: rgb(97, 124, 65);
-    width: 1000px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1200px;
+    height: 420px;
+    
+    padding-top: 20px;
+
+    justify-content:center;
+    align-items: center;
 }
 
-#lado{
+.produtos{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+/*podemos colocar mais opções*/
+.lado-direito{
     background-color: rgb(87, 65, 107);
     width: 400px;
+    height: 100%;
 }
