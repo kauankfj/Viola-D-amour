@@ -73,7 +73,7 @@ main{
 }
 
 .lado-direito{
-    background-color: rgb(27, 58, 35);
+    background-color: rgb(87, 65, 107);
     width: 20%;
     height: 100%;
 }
@@ -81,6 +81,7 @@ main{
 #ativo{
     text-decoration: underline;
     font-size: 35px;
+    
 }
 
 .meio{
@@ -96,10 +97,9 @@ main{
     padding-left:30px ;
 }
 
-.meio a{
+.meio a {
     text-decoration: none;
     color: rgb(124, 84, 121);
-
 }
 
 .meio p:hover{
@@ -110,7 +110,7 @@ main{
 }
 
 .baixo{
-    background-color: rgb(84, 99, 66);
+    background-color: rgb(119, 98, 112);
     width: 100%;
     height: 100%;
 
