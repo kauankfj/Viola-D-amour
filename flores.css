@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 *{
 
     margin: 0%;
@@ -8,12 +9,38 @@
 
 }
 
+header{
+    display: flex;
+    background-color:  rgb(168, 101, 132);
+}
+
+.banner{
+
+    background-image: url(./imagens/banner_flores.jpg);
+    height: 300px;
+
+    background-size: cover;
+}
+
+
 body{
+    background-color: rgb(228, 213, 171);
+}
 
-    background-color: #fff5f8;
+#logo{
+    width: 100px;
+    height: 75px;
+}
 
-    font-family: Arial, sans-serif;
+h1{
 
+  font-family: "Ephesis", cursive;
+  font-weight: 600;
+  font-style: normal; /*fonte do titulo*/
+  font-size: 60px;
+
+  align-self: flex-end;
+  color:  rgb(110,42,75);
 }
 
 img{
@@ -23,4 +50,115 @@ img{
     width: 160px;
 
 }
+
+.container{
+
+    margin-top: 50px;
+
+    height: 625px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 2%;
+
+    flex-wrap: wrap;
+
+    transform: scale(1.0);
+
+    transition: 1s;
+
+}
+
+.explore02{
+
+    display: flex;
+
+    width: 200px;
+
+    height: 300px;
+
+    background-color: #7a1648;;
+
+    border: 1px;
+
+    border-radius: 15px;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow: 5px 5px 10px rgba(82, 2, 62, 0.622);
+
+    transform: scale(1.0);
+
+    transition: 2s;
+
+}
+
+
+
+
+.sobre{
+
+    text-align: center;
+
+    padding: 50px;
+
+    background-color: #f5dce5;
+
+}
+
+.sobre h2{
+
+    height: auto;
+
+    padding: 10px;
+
+}
+
+.sobre p{
+
+    max-width: 700px;
+
+    margin: 15px auto;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+}
+
+footer{
+
+    background-color: #7a1648;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+footer h3{
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+footer p{
+
+    margin: 8px;
+
+}
+
+
 
