@@ -56,11 +56,19 @@ body{
     padding: 0 30px;
 }
 
+/*barra de pesquisa*/
 .pesquisa input {
     width: 350px;
     padding: 10px;
     border: none;
     border-radius: 5px;
+}
+
+/*icone de pesquisa*/
+.pesquisa i {
+    position: relative;
+    right: 25px;
+    top: 10px;
 }
 
 /* Perfil */
@@ -102,6 +110,7 @@ main{
     flex-direction: column;
 }
 
+/*fundo*/
 .banner{
     background-image: url(./imagens/banner_vela.jpeg);
     width: 100%;
@@ -173,7 +182,7 @@ main{
 }
 
 .baixo{
-    background-color: rgb(84, 99, 66);
+    background-color: #6d714b;
     width: 100%;
     height: 100%;
 
@@ -193,6 +202,7 @@ main{
     object-fit: cover;
 
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 /*caixa dos produtos*/
@@ -203,11 +213,19 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-around;
+    
     
 }
 
+.produtos:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
 .lado-direito{
-    background-color: rgb(27, 58, 35);
+    background-color: #5c6130;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -320,7 +338,7 @@ main{
 
 footer{
 
-    background-color: rgb(33, 73, 35);
+    background-color: rgb(61, 71, 33);
 
     color: white;
 
