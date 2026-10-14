@@ -44,6 +44,7 @@ body{
   font-weight: 600;
   font-style: normal; /*fonte do titulo*/
   font-size: 60px;
+
   align-self: flex-end;
   color:  rgb(110,42,75);
 }
@@ -56,7 +57,6 @@ body{
     padding: 0 30px;
 }
 
-/*barra de pesquisa*/
 .pesquisa input {
     width: 350px;
     padding: 10px;
@@ -64,7 +64,6 @@ body{
     border-radius: 5px;
 }
 
-/*icone de pesquisa*/
 .pesquisa i {
     position: relative;
     right: 25px;
@@ -110,7 +109,6 @@ main{
     flex-direction: column;
 }
 
-/*fundo*/
 .banner{
     background-image: url(./imagens/banner_vela.jpeg);
     width: 100%;
@@ -131,7 +129,7 @@ main{
     margin-top: 450px;
 }
 
-.lado-esquerdo{
+.lado-esquedo{
     background-color: rgb(97, 124, 65);
     width: 80%;
     height: 100%;
@@ -145,6 +143,7 @@ main{
 #ativo{
     text-decoration: underline;
     font-size: 35px;
+
 }
 
 .meio{
@@ -168,11 +167,7 @@ main{
     padding-top: 10px;
 }
 
-.meio a{
-    text-decoration: none;
-    color: rgb(124, 84, 121);
 
-}
 
 .meio p:hover{
     text-decoration: underline;
@@ -195,7 +190,8 @@ main{
     align-items: center;
 }
 
-/*configuração da imagem*/
+
+/*imagem do produto*/
 .produto{
     width: 250px;
     height: 250px;
@@ -205,7 +201,7 @@ main{
     margin-bottom: 20px;
 }
 
-/*caixa dos produtos*/
+/*caixas dos produtos*/
 .produtos{
     background-color:  rgb(228, 213, 171);;
     border-radius: 20px;
@@ -215,7 +211,6 @@ main{
     text-align: center;
     justify-content: space-around;
     
-    
 }
 
 .produtos:hover{
@@ -224,14 +219,21 @@ main{
     text-decoration: underline;
 }
 
+    
+.meio a{
+    text-decoration: none;
+    color: rgb(124, 84, 121);
+    height: 100%;
+}
+
 .lado-direito{
     background-color: #5c6130;
-    width: 300px;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:40px;
-    padding-top: 20px
+    padding-top: 20px;
 }
 
 .caixa-cimad{
