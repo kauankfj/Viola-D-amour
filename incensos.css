@@ -1,36 +1,49 @@
-/*fonte do titulo*/
+
+/* FONTE DO TÍTULO */
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
-*{
-    padding: 0%;
-    margin: 0%;
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(228, 213, 171);
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    background-color: rgb(228, 213, 171);
+    font-family: Arial, sans-serif;
+    padding-top: 75px;
+    overflow-x: hidden;
+}
+
+/* CABEÇALHO FIXO */
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     width: 100%;
     height: 75px;
     padding: 0 20px;
-    box-sizing: border-box;
-
     position: fixed;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     background-color: #a66483;
 }
 
-/* Logo e nome */
+/* LOGO E NOME */
+
 .logo {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -40,20 +53,24 @@ body{
 }
 
 .logo h1 {
-     font-family: "Ephesis", cursive;
-  font-weight: 600;
-  font-style: normal; /*fonte do titulo*/
-  font-size: 60px;
-
-  align-self: flex-end;
-  color:  rgb(110,42,75);
+    font-family: "Ephesis", cursive;
+    font-weight: 600;
+    font-size: 60px;
+    color: rgb(110, 42, 75);
+    white-space: nowrap;
 }
 
-/* Pesquisa */
+header a {
+    text-decoration: none;
+}
+
+/* PESQUISA */
+
 .pesquisa {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0 30px;
 }
 
@@ -62,18 +79,29 @@ body{
     padding: 10px;
     border: none;
     border-radius: 5px;
+    outline-color: #7a1648;
+    font-size: 15px;
 }
 
-/* Perfil */
+.pesquisa i {
+    position: relative;
+    right: 25px;
+    font-size: 18px;
+}
+
+/* PERFIL */
+
 .perfil {
     display: flex;
     align-items: center;
     gap: 8px;
     white-space: nowrap;
     font-size: 20px;
+    color: rgb(110, 42, 75);
+    flex-shrink: 0;
 }
 
-.perfil a:hover{
+.perfil a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -81,270 +109,279 @@ body{
 .perfil i {
     width: 40px;
     height: 40px;
-    object-fit: contain;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: white;
     cursor: pointer;
-
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    font-size: 20px;
 }
 
+/* BANNER FIXO AO FUNDO */
 
-
-header a{
-text-decoration: none;
-}
-
-main{
-    display: flex;
-    width:100%;
-    height: 1720px; 
-    flex-direction: column;
-}
-
-.banner{
-    background-image: url(./imagens/banner_vela.jpeg);
+.banner {
+    background-image: url("./imagens/banner_vela.jpeg");
     width: 100%;
     height: 450px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: fixed;
+    top: 75px;
+    left: 0;
     z-index: -1;
 }
 
+/* ÁREA PRINCIPAL */
 
-
-.partebaixo{
+main {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* PARTE INFERIOR */
+
+.partebaixo {
+    display: flex;
+    align-items: stretch;
     background-color: rgb(141, 96, 145);
     width: 100%;
-    height: 1400px;
+    min-height: 1400px;
     margin-top: 450px;
 }
 
-.lado-esquedo{
-    background-color: rgb(97, 124, 65);
-    width: 80%;
-    height: 100%;
+/* LADO ESQUERDO */
 
+.lado-esquedo {
+    background-color: rgb(141, 96, 145);
+    width: 80%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
 }
 
+/* MENU DE CATEGORIAS */
 
-
-#ativo{
-    text-decoration: underline;
-    font-size: 35px;
-
-}
-
-.meio{
+.meio {
     position: absolute;
-    top: 380px;
-    left: 25%;
-
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
 
     display: flex;
-    
+    align-items: center;
     justify-content: space-around;
-    gap: 40px;
+    gap: 30px;
 
     background-color: rgb(228, 213, 171);
     color: rgb(124, 84, 121);
+
     border-radius: 20px;
-    
     width: 700px;
     height: 60px;
-    font-size: 30px;
-    padding-top: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
 }
 
-
-
-.meio p:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: 0.2s;
-}
-
-.baixo{
-    background-color: rgb(141, 96, 145);
-    width: 100%;
-    height: 100%;
-
-    padding-top: 40px;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.produto{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-
-    border-radius: 20px;
-}
-
-.produtos{
-    background-color:  rgb(228, 213, 171);;
-    border-radius: 20px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-
-    
-.meio a{
+.meio a {
     text-decoration: none;
     color: rgb(124, 84, 121);
-    height: 100%;
 }
 
-.lado-direito{
-    background-color: rgb(87, 65, 107);
-    width: 20%;
+.meio p {
+    transition: transform 0.2s;
+}
+
+.meio p:hover,
+.meio a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.meio p:hover {
+    transform: scale(1.08);
+}
+
+#ativo {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+/* GRADE DOS PRODUTOS */
+
+.baixo {
+    background-color: rgb(141, 96, 145);
+    width: 100%;
+    flex: 1;
+    padding: 110px 25px 35px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 390px;
+    gap: 25px 20px;
+
+    align-content: start;
+    justify-items: stretch;
+}
+
+/* CARDS DOS PRODUTOS */
+
+.produtos {
+    background-color: rgb(228, 213, 171);
+    border-radius: 18px;
+    width: 100%;
+    height: 390px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    box-shadow: 3px 4px 10px rgba(62, 25, 65, 0.22);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.produtos:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 8px 15px rgba(62, 25, 65, 0.3);
+}
+
+.produtos article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:40px;
-    padding-top: 20px;
+    height: 100%;
+    width: 100%;
 }
 
-.caixa-cimad{
+/* IMAGENS DOS PRODUTOS */
+
+.produto {
+    display: block;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* NOME DO PRODUTO */
+
+.produtos h3 {
+    font-size: 18px;
+    line-height: 1.3;
+    color: rgb(99, 41, 99);
+    margin: 0 0 10px;
+}
+
+/* PREÇO */
+
+.produtos p {
+    font-size: 21px;
+    font-weight: bold;
+    color: #7a1648;
+    margin-top: auto;
+    padding-bottom: 5px;
+}
+
+/* LADO DIREITO */
+
+.lado-direito {
+    background-color: rgb(87, 65, 107);
+    width: 20%;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* CAIXAS LATERAIS */
+
+.caixa-cimad,
+.caixa-baixod {
     background-color: rgb(228, 213, 171);
     color: rgb(99, 41, 99);
-    width: 270px;
-    height: 200px;
-    border-radius: 30px;
-    padding-left: 20px ;
-    padding-right: 20px;
+    width: 100%;
+    max-width: 270px;
+    min-height: 230px;
+    height: auto;
+    border-radius: 25px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 5px;
-
-    
-
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.caixa-cimad button{
-    width: 200px;
-    height: 40px;
+.caixa-cimad button,
+.caixa-baixod button {
+    width: 100%;
+    min-height: 40px;
     background-color: rgb(99, 41, 99);
     border: none;
     border-radius: 10px;
     margin-top: 10px;
     color: #fff;
-    
-
-
-}
-
-.caixa-cimad button:hover{
-    text-decoration: underline;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-.caixa-cimad i{
-    position: relative;
-    top: 25px;
-    left: -10px;
-    font-size: 30px;
-    
-    
+.caixa-cimad button:hover,
+.caixa-baixod button:hover {
+    background-color: #7a1648;
 }
 
-.caixa-cimad h4{
-    padding-left: 20px;
+.caixa-cimad i,
+.caixa-baixod i {
+    font-size: 28px;
 }
 
-.caixa-baixod{
-    background-color: rgb(228, 213, 171);
-    color: rgb(99, 41, 99);
-    width: 270px;
-    height: 200px;
-    border-radius: 30px;
-    padding-left: 20px ;
-    padding-right: 20px;
-    
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 5px;
+.caixa-cimad h4,
+.caixa-baixod h4 {
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.caixa-baixod button{
-    width: 200px;
-    height: 20px;
-    background-color: rgb(99, 41, 99);
-    border: none;
-    border-radius: 10px;
-    margin-top: 10px;
-    color: #fff;
-    
+.caixa-cimad h3,
+.caixa-baixod h3 {
+    font-size: 19px;
 }
 
-.caixa-baixod button:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.caixa-cimad p,
+.caixa-baixod p {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-.caixa-baixod i{
-    position: relative;
-    top: 25px;
-    left: -10px;
-    font-size: 30px;
-    
-}
-
-.caixa-baixod h4{
-    padding-left: 20px;
-}
-
-#seta{
-    position: relative;
-    top: -25px;
-    left: 160px;
-    
+#seta {
+    align-self: flex-end;
     font-size: 20px;
-    color: #fff;
+    color: #7a1648;
 }
 
-footer{
+/* RODAPÉ */
 
+footer {
     background-color: rgb(102, 71, 119);
-
     color: white;
-
     text-align: center;
-
     padding: 30px;
-
+    position: relative;
+    z-index: 2;
 }
 
-footer h3{
-
+footer h3 {
     font-size: 25px;
-
     margin-bottom: 15px;
-
 }
 
-footer p{
-
+footer p {
     margin: 8px;
-
 }
