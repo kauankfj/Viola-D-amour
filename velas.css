@@ -226,7 +226,7 @@ main{
 
 .lado-direito{
     background-color: #5c6130;
-    width: 20%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
