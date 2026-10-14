@@ -145,7 +145,7 @@ main {
 
 .partebaixo {
     display: flex;
-    align-items: stretch;
+    flex-direction: row;
     background-color: rgb(141, 96, 145);
     width: 100%;
     min-height: 1400px;
@@ -321,7 +321,7 @@ main {
 
 .caixa-cimad button,
 .caixa-baixod button {
-    width: 100%;
+    width: 225px;
     min-height: 40px;
     background-color: rgb(99, 41, 99);
     border: none;
@@ -361,9 +361,11 @@ main {
 }
 
 #seta {
-    align-self: flex-end;
+    position: relative;
     font-size: 20px;
-    color: #7a1648;
+    color: #ffffff;
+    top: -40px;
+    left: 180px;
 }
 
 /* RODAPÉ */

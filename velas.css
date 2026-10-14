@@ -1,4 +1,4 @@
-```css
+
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
 * {
@@ -317,6 +317,7 @@ main {
 .caixa-cimad a,
 .caixa-baixod a {
     display: block;
+    
     width: 100%;
     margin-top: 5px;
 }
@@ -340,11 +341,11 @@ main {
 }
 
 #seta {
-    position: absolute;
-    right: 15px;
-    bottom: 12px;
+    position: relative;
+    left: 180px;
+    top: -40px;
     font-size: 20px;
-    color: rgb(99, 41, 99);
+    color: #ffffff;
 }
 
 /* RODAPÉ */
