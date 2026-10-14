@@ -1,94 +1,248 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./aromas.css">
-    <link rel="stylesheet" href="http://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <title> Viola D'Amour</title>
-</head>
-<body>
-     <header>
-<!--cabeçalho-->
-        <a href="./index.html" target="_blank"><img src="./imagens/logo.png" id="logo" ></a> 
-        <h1>viola d'amour</h1> <!--nome da empresa-->
 
-        <div class="pesquisa"> 
-            <input type="text" placeholder="Pesquise aqui">
+    <title>Viola D'Amour - Aromas</title>
+
+    <link rel="stylesheet" href="./aromas.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./imagens/logo.png" alt="Logo Viola D'Amour">
+            </a>
+
+            <h1>Viola d’amour</h1>
         </div>
 
-        <!-- Perfil à direita -->
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquise aqui">
+            <i class="bx bx-search-alt"></i>
+        </div>
+
         <div class="perfil">
-            <span>perfil: <a>mariana</a></span>
+            <span>perfil: <a href="#">mariana</a></span>
             <i class="bx bx-user"></i>
         </div>
+
     </header>
+
+    <!-- BANNER -->
+    <div class="banner"></div>
 
     <main>
 
-        <section>
+        <div class="partebaixo">
+        
+            <div class="lado-esquedo"> 
 
-            <article class="banner"> <!-- banner principal!!!!!!!!! -->
+ <div class="meio">
 
-            </article>
-        </section>  
-        
-        <section class="produtos-section">
-
-            <div class="container">
-        
-                <div class="aromas">1</div>
-        
-                <div class="aromas">2</div>
-        
-                <div class="aromas">3</div>
-        
-                <div class="aromas">4</div>
-        
-                <div class="aromas">5</div>
-        
-                <div class="aromas">6</div>
-        
-            </div>
-        
-        </section>
-
-        <section class="produtos-section">
-
-            <div class="container">
-        
-                <div class="aromas">7</div>
-        
-                <div class="aromas">8</div>
-        
-                <div class="aromas">9</div>
-        
-                <div class="aromas">10</div>
-        
-                <div class="aromas">11</div>
-        
-                <div class="aromas">12</div>
-        
-            </div>
-        
-        </section>
-
-
-        <section> <!--Div de produtos!!!!!!!-->
-             <div class="partebaixo">
-            <div class="lado-esquedo">
-                <div class="meio">
-                    <a href="./index.html">Todos</a>
-                    <a href="./flores.html"><p>Flores</p></a>
-                    <a href="./incensos.html"><p>Incensos</p></a>
-                    <a href="./velas.html"><p>Velas</p></a>
-                    <p id="ativo">Aromas</p>
-                    
+                    <a href="todos.html"><p>todos</p></a>
+                    <a href="./flores.html"><p>flores</p></a>
+                    <a href="./incensos.html"><p>incensos</p></a>
+                    <p id="ativo">velas</p>
+                    <a href="./aroma.html"><p>aromas</p></a>
                 </div>
-        </section>
 
-        
+                <!-- GRADE DOS AROMAS -->
+                <div class="baixo">
+
+                    <!-- AROMA 01 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.57.jpeg"
+                            alt="Aroma de rosas"
+                            class="produto">
+                        <h3>ROSAS</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 02 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.57.jpeg"
+                            alt="Aroma de jasmin"
+                            class="produto">
+                        <h3>JASMIN</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 03 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.58 (1).jpeg"
+                            alt="Aroma de capim-leão"
+                            class="produto">
+                        <h3>CAPIM-LEÃO</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 04 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.58 (2).jpeg"
+                            alt="Aroma de lavanda"
+                            class="produto">
+                        <h3>LAVANDA</h3>
+                        <p class="preco">R$ 15,00</p>
+                    </div>
+
+                    <!-- AROMA 05 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.58 (3).jpeg"
+                            alt="Aroma de alecrim"
+                            class="produto">
+                        <h3>ALECRIM</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 06 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.59 (1).jpeg"
+                            alt="Aroma de lemongrass"
+                            class="produto">
+                        <h3>LEMONGRASS</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 07 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.59 (2).jpeg"
+                            alt="Aroma de sândalo"
+                            class="produto">
+                        <h3>SÂNDALO</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 08 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.59 (3).jpeg"
+                            alt="Aroma de baunilha"
+                            class="produto">
+                        <h3>BAUNILHA</h3>
+                        <p class="preco">R$ 20,00</p>
+                    </div>
+
+                    <!-- AROMA 09 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.09.59.jpeg"
+                            alt="Aroma de ylang-ylang"
+                            class="produto">
+                        <h3>YLANG-YLANG</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 10 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.19.52 (1).jpeg"
+                            alt="Aroma de eucalipto"
+                            class="produto">
+                        <h3>EUCALIPTO</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 11 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.19.52.jpeg"
+                            alt="Aroma de laranja-doce"
+                            class="produto">
+                        <h3>LARANJA-DOCE</h3>
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+
+                    <!-- AROMA 12 -->
+                    <div class="produtos">
+                        <img
+                            src="./imagens/img_aromas/WhatsApp Image 2026-10-14 at 10.19.53.jpeg"
+                            alt="Aroma de patchouli"
+                            class="produto">
+                        <h3>PATCHOULI</h3>
+                        <p class="preco">R$ 15,00</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- COLUNA DIREITA: PROMOÇÕES -->
+            <aside class="lado-direito">
+
+                <div class="caixa-cimad">
+
+                    <i class="bx bx-calendar-star"></i>
+
+                    <h4>ofertas especiais</h4>
+                    <h3>Um mimo para você</h3>
+
+                    <p>
+                        Descubra nossas ofertas e encontre algo especial
+                        para você ou para presentear.
+                    </p>
+
+                    <a href="./promoção.html">
+                        <button type="button">VER PROMOÇÕES</button>
+                    </a>
+
+                    <i class="bx bx-right-arrow-alt" id="seta"></i>
+
+                </div>
+
+                <div class="caixa-baixod">
+
+                    <i class="bx bx-calendar-star"></i>
+
+                    <h4>feito para você</h4>
+                    <h3>Do seu jeito, com carinho.</h3>
+
+                    <p>
+                        Crie um presente personalizado com a delicadeza
+                        e a essência da Viola D'Amour.
+                    </p>
+
+                    <a href="./promoção.html">
+                        <button type="button">ENCOMENDAR</button>
+                    </a>
+
+                    <i class="bx bx-right-arrow-alt" id="seta"></i>
+
+                </div>
+
+            </aside>
+
+        </div>
+
     </main>
-        
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h3>Viola D'Amour</h3>
+
+        <p>Contato: violadamour@email.com</p>
+        <p>Telefone: (16) 99999-9999</p>
+        <p>Localidade: Rua das Flores, 120 - Ribeirão Preto - SP</p>
+        <p>2026 Viola D'Amour - Todos os direitos reservados.</p>
+
+    </footer>
+
 </body>
 </html>
