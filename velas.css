@@ -150,7 +150,7 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin-top: 450px;
     min-height: 500px;
@@ -159,6 +159,7 @@ main {
     z-index: 1;
 
     padding-bottom: 35px;
+    background-color: rgb(228, 213, 171);
 }
 
 /* MENU DE CATEGORIAS */
