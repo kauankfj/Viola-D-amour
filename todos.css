@@ -112,15 +112,19 @@ main{
     flex-direction: column;
 }
 
-.banner{
-    background-image: url(./imagens/banner_vela.jpeg);
+.banner {
+    background-image: url("./imagens/banner_vela.jpeg");
     width: 100%;
     height: 450px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: fixed;
+    top: 75px;
+    left: 0;
     z-index: -1;
 }
+
 
 
 

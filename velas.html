@@ -1,200 +1,157 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viola d'amour - Velas</title>
+
+    <title>Viola D'Amour - Velas</title>
+
     <link rel="stylesheet" href="velas.css">
-    <link rel="stylesheet" href="http://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"> <!--ancora para o css-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 
 <body>
-    <header class="header">
 
-        <!-- Logo e nome à esquerda -->
+    <!-- CABEÇALHO -->
+    <header>
         <div class="logo">
-            <img src="./imagens/logo.png" alt="Logo Viola d'am our">
+            <img src="./imagens/logo.png" alt="Logo Viola D'Amour" id="logo">
             <h1>Viola d’amour</h1>
         </div>
 
-        <!-- Barra de pesquisa no centro -->
+        <!-- PESQUISA -->
         <div class="pesquisa">
-            <input type="text" placeholder="Pesquise aqui">
+            <input type="text" placeholder="Pesquise aqui" aria-label="Pesquisar produtos">
             <i class="bx bx-search-alt"></i>
         </div>
 
-        <!-- Perfil à direita -->
+        <!-- PERFIL -->
         <div class="perfil">
-            <span>perfil: <a>mariana</a></span>
+            <span>perfil: <a href="#">mariana</a></span>
             <i class="bx bx-user"></i>
         </div>
     </header>
 
-        <div class="banner"></div>
+    <!-- BANNER -->
+    <div class="banner"></div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
-        
-        <div class="partebaixo">
-            <div class="lado-esquedo">
-                <div class="meio">
 
-                    <a href="todos.html"><p>todos</p></a>
-                    <a href="./flores.html"><p>flores</p></a>
-                    <a href="./incensos.html"><p>incensos</p></a>
-                    <p id="ativo">velas</p>
-                    <a href="./aroma.html"><p>aromas</p></a>
-                </div>
+        <!-- MENU DE CATEGORIAS -->
+        <nav class="meio">
+            <a href="todos.html"><p>todos</p></a>
+            <a href="./flores.html"><p>flores</p></a>
+            <a href="./incensos.html"><p>incensos</p></a>
+            <p id="ativo">velas</p>
+            <a href="./aroma.html"><p>aromas</p></a>
+        </nav>
 
-                <!--onde apareceram os produtos-->
-                <div class="baixo">
+        <!-- PRODUTOS -->
+        <section class="produtos-section">
 
-                    <!--card dos produtos-->
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela amadeirada.jpeg" class="produto">
-                            <h3>vela amadeirada</h3>
-                            <p>R$22,50</p>
-                        </article>
-                    </div>
+            <div class="container">
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de algodão.jpeg" class="produto">
-                            <h3>vela de algodão</h3>
-                            <p>R$20,00</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela amadeirada.jpeg" alt="Vela amadeirada">
+                    <h3>Vela amadeirada</h3>
+                    <p class="descricao">Um aroma amadeirado e acolhedor para deixar o ambiente mais confortável.</p>
+                    <p class="preco">R$ 22,50</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de baunilha.jpeg" class="produto">
-                            <h3>vela de baunilha</h3>
-                            <p>R$23,50</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de algodão.jpeg" alt="Vela de algodão">
+                    <h3>Vela de algodão</h3>
+                    <p class="descricao">Uma fragrância suave e delicada para momentos de tranquilidade.</p>
+                    <p class="preco">R$ 20,00</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de bergamota.jpeg" class="produto">
-                            <h3>vela de bergamota</h3>
-                            <p>R$19,99</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de baunilha.jpeg" alt="Vela de baunilha">
+                    <h3>Vela de baunilha</h3>
+                    <p class="descricao">Um aroma doce e aconchegante para trazer conforto ao seu espaço.</p>
+                    <p class="preco">R$ 23,50</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de capim-limão.jpeg" class="produto">
-                            <h3>vela de capim-limão</h3>
-                            <p>R$15,00</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de bergamota.jpeg" alt="Vela de bergamota">
+                    <h3>Vela de bergamota</h3>
+                    <p class="descricao">Uma fragrância cítrica e refrescante para renovar o ambiente.</p>
+                    <p class="preco">R$ 19,99</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de framboesa.jpeg" class="produto">
-                            <h3>vela de framboesa</h3>
-                            <p>R$25,50</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de capim-limão.jpeg" alt="Vela de capim-limão">
+                    <h3>Vela de capim-limão</h3>
+                    <p class="descricao">Um aroma herbal e fresco para deixar o espaço mais leve.</p>
+                    <p class="preco">R$ 15,00</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de jasmim.jpeg" class="produto">
-                            <h3>vela de jasmim</h3>
-                            <p>R$18,00</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de framboesa.jpeg" alt="Vela de framboesa">
+                    <h3>Vela de framboesa</h3>
+                    <p class="descricao">Uma fragrância frutada e marcante para perfumar seus momentos.</p>
+                    <p class="preco">R$ 25,50</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de laranja.jpeg" class="produto">
-                            <h3>vela de laranja</h3>
-                            <p>R$28,00</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de jasmim.jpeg" alt="Vela de jasmim">
+                    <h3>Vela de jasmim</h3>
+                    <p class="descricao">Um perfume floral delicado para criar uma atmosfera agradável.</p>
+                    <p class="preco">R$ 18,00</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de lavanda.jpeg" class="produto">
-                            <h3>vela de lavanda</h3>
-                            <p>R$20,00</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de laranja.jpeg" alt="Vela de laranja">
+                    <h3>Vela de laranja</h3>
+                    <p class="descricao">Uma fragrância cítrica e vibrante para trazer frescor ao ambiente.</p>
+                    <p class="preco">R$ 28,00</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de limão.jpeg" class="produto">
-                            <h3>vela de limão</h3>
-                            <p>R$25,50</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de lavanda.jpeg" alt="Vela de lavanda">
+                    <h3>Vela de lavanda</h3>
+                    <p class="descricao">Um aroma floral suave para acompanhar seus momentos de descanso.</p>
+                    <p class="preco">R$ 20,00</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de lírio do vale.jpeg" class="produto">
-                            <h3>vela de lírio</h3>
-                            <p>R$22,00</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de limão.jpeg" alt="Vela de limão">
+                    <h3>Vela de limão</h3>
+                    <p class="descricao">Uma fragrância cítrica e refrescante para perfumar a casa.</p>
+                    <p class="preco">R$ 25,50</p>
+                </article>
 
-                    <div class="produtos">
-                        <article>
-                            <img src="./produtos do site/vela de sakura.jpeg" class="produto">
-                            <h3>vela de sakura</h3>
-                            <p>R$20,99</p>
-                        </article>
-                    </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de lírio do vale.jpeg" alt="Vela de lírio do vale">
+                    <h3>Vela de lírio do vale</h3>
+                    <p class="descricao">Um aroma floral delicado que combina suavidade e elegância.</p>
+                    <p class="preco">R$ 22,00</p>
+                </article>
 
-                </div>
+                <article class="velas">
+                    <img src="./produtos do site/vela de sakura.jpeg" alt="Vela de sakura">
+                    <h3>Vela de sakura</h3>
+                    <p class="descricao">Uma fragrância floral inspirada na delicadeza das flores de cerejeira.</p>
+                    <p class="preco">R$ 20,99</p>
+                </article>
 
             </div>
-
-            <div class="lado-direito">
-                <div class="caixa-cimad">
-                    <i class="bx bx-calendar-star"></i>
-                    <h4>ofetas especiais</h4>
-                    <h3>Um mimo para você</h3>
-                    <p>Descubra nossas ofertas e econtre algo especial para você ou para presentear</p>
-                    <a href="promoção.html"><button> VER PROMOÇÕES</button></a>
-                    <i class="bx bx-right-arrow-alt" id="seta"></i>
-                </div>
-
-                <div class="caixa-baixod">
-                    <i class="bx bx-calendar-star"></i>
-                    <h4>feito para você</h4>
-                    <h3>Do seu jeito, com carrinho.</h3>
-                    <p>Crie um presente personalizado com a delicadeza e a essência da Viola D'Amour</p>
-                    <a href="encomendar.html"><button> ENCOMENDAR</button></a>
-                    <i class="bx bx-right-arrow-alt" id="seta"></i>
-                    
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
+        </section>
 
     </main>
 
+    <!-- RODAPÉ -->
     <footer>
-
-        <h3>Viola D'amour</h3>
+        <h3>Viola D'Amour</h3>
 
         <p>Contato: violadamour@email.com</p>
-
         <p>Telefone: (16) 99999-9999</p>
-
         <p>Localidade: Rua das Flores, 120 - Ribeirão Preto - SP</p>
-
-        <p> 2026 Viola D'amour - Todos os direitos reservados.</p>
-
+        <p>2026 Viola D'Amour - Todos os direitos reservados.</p>
     </footer>
 
-
-
 </body>
-
 </html>
