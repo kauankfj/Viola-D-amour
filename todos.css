@@ -127,10 +127,11 @@ main{
 .partebaixo{
     display: flex;
     background-color: rgb(141, 96, 145);
-    width: auto;
-    height: 222%;
+    width: 100%;
+    
+    height: auto;
     margin-top: 450px;
-    flex: 1;
+    
 }
 
 .lado-esquedo{

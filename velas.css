@@ -125,7 +125,7 @@ header a {
 /* CONTEÚDO PRINCIPAL */
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     margin-top: 450px;
 }
@@ -387,16 +387,10 @@ main {
 
 /* SETA */
 #seta {
-<<<<<<< HEAD
-    position: absolute;
-    right: 15px;
-    bottom: 12px;
-
-=======
     position: relative;
     left: 180px;
     top: -40px;
->>>>>>> 459710d7d79aefc3b856a50dad8e3a148ebf1dea
+
     font-size: 20px;
     color: #ffffff;
 }
