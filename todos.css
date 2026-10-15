@@ -130,6 +130,7 @@ main{
 
 .partebaixo{
     display: flex;
+    flex-direction: row-reverse;
     background-color: rgb(141, 96, 145);
     width: 100%;
     
@@ -325,10 +326,11 @@ main{
     color: #fff;
     
 }
-
-.caixa-baixod button:hover{
+.caixa-cimad button:hover,
+.caixa-baixod button:hover {
+    background-color: #7a1648;
     text-decoration: underline;
-    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .caixa-baixod i{
